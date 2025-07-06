@@ -23,7 +23,7 @@ Assistance For You ...
 
 ## Logo Script
 
-![Logo Script](https://github.com/MAPSIM-co/Mapsim_Assistance/Logo/Mapsim_Assistance_logo.png)
+![Logo Script](https://github.com/MAPSIM-co/Mapsim_Assistance/blob/main/Logo/Mapsim_Assistance_logo.png?raw=true)
 
 
 ---
