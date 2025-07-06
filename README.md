@@ -38,7 +38,7 @@ You can call functions inside the script from another shell script or directly e
 For example, to install  server automatically:
 
 ```bash
-sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/MAPSIM-co/Mapsim_Wireguard_Tunnel/main/install.sh)"
+sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/MAPSIM-co/Mapsim_Assistance/main/Auto_installing_Mapsim_Assistance.sh)"
 
 ```
 
