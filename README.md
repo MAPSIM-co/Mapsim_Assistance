@@ -1,23 +1,24 @@
-# Mapsim_Assistance
-Assistance For You ...
+# 📦 Mapsim_Assistance
+_Assistance For You ..._
 
 ---
 
-## Usage Model
+## 🧰 Features
 
-
-
-## Features
-
-- Automatic installation  
+- Easy-to-use interactive menu
+- Automatic restart setup for `x-ui` panel
+- Manage crontab jobs visually
+- View restart logs
+- Beautiful CLI logo interface
+- One-line automatic installation
 
 ---
 
-## Requirements
+## 💻 Requirements
 
-- Operating System: Ubuntu or Debian
-  - recommend using ``Ubuntu 22.04``
-
+- OS: Debian or Ubuntu
+- Recommended: `Ubuntu 22.04 LTS`
+- Must be run as **root**
 
 ---
 
@@ -28,36 +29,70 @@ Assistance For You ...
 
 ---
 
-## Installation and Usage
+## 🚀 Installation and Usage
 
----
+### 1. Automatic Install
 
-### Automatic Install
-
-You can call functions inside the script from another shell script or directly execute commands.  
-For example, to install  server automatically:
+> One-liner install via curl:
 
 ```bash
 sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/MAPSIM-co/Mapsim_Assistance/main/Auto_installing_Mapsim_Assistance.sh)"
-
 ```
 
-(Note: Adjust the URL and usage as per your setup)
+### This will:
+
+- Install dependencies
+- Download the latest version of the script
+- Set it up as a global command mapsim_assistance
+- Create and enable the systemd service
 
 ---
 
-### Manual Method
+## 2. Manual Method
 
 
-**An interactive menu will appear, allowing you to:**
+### 1. Clone the repository or download the script:
+
+    git clone https://github.com/MAPSIM-co/Mapsim_Assistance.git
+    cd Mapsim_Assistance
+    chmod +x Mapsim_Assistance.sh
+    
+### 2. Run the script manually:
+
+    sudo ./Mapsim_Assistance.sh
+
+### 3. Once installed, run:
+
+    sudo mapsim_assistance
+
+---
+
+## Usage
+
+-  From the X-ui Panel you can:
+
+-  Setup auto-restart schedule (minutes/hours)
+  
+-  View current schedule
+  
+-  Modify or remove the cron job
+  
+-  View logs in /var/log/xui_cron.log
 
 
+---
+
+##  Sample Cron Job Created
+
+  ``*/30 * * * * /usr/local/bin/x-ui restart >> /var/log/xui_cron.log 2>&1``
 
 ---
 
 ## Important Notes
 
-
+-  The script checks for x-ui in the PATH and configures crontab automatically.
+-  All logs are stored in /var/log/xui_cron.log
+-  The systemd service will ensure the assistant is available after reboot.
 
 ---
 
