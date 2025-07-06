@@ -63,7 +63,7 @@ sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/MAPSIM-co/Mapsim_Wi
 
 ## License
 
-This project is licensed under the [MIT]() License.
+This project is licensed under the [MIT](https://github.com/MAPSIM-co/Mapsim_Assistance/blob/main/LICENSE) License.
 
 ---
 
